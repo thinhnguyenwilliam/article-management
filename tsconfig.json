@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es6", // Targeted ECMAScript version
+        "module": "commonjs", // Module system used in Node.js
+        "strict": true, // Enable all strict type-checking options
+        "esModuleInterop": true, // Helps with imports
+        "skipLibCheck": true, //Skips type-checking of declaration files (*.d.ts), which can speed up compilation when using third-party libraries, especially large ones with complex type definitions.
+        "forceConsistentCasingInFileNames": true, // Ensures that file names are treated in a case-sensitive manner, meaning that file.ts and File.ts
+        "outDir": "./dist", // Directory for compiled .js files
+        "rootDir": "./src" // Root directory of TypeScript files
+    },
+    "include": [
+        "src/**/*.ts"
+    ], // Include all .ts files in the src folder
+    "exclude": [
+        "node_modules"
+    ] // Exclude node_modules folder
+}
