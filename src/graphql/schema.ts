@@ -16,9 +16,13 @@ export const typeDefs = gql`
 
     type Query {
         getAllArticles: [Article]
+        getArticleById(id: ID!): Article
     }
 
     type Mutation {
+        createArticle(title: String!, avatar: String!, description: String!): Article
+        updateArticle(id: ID!, title: String, avatar: String, description: String): Article
         deleteArticle(id: ID!): Article
     }
+        
 `;
